@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff; /* Replace with actual color from design */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* Include logo styling here */
+  }
+  
+  .menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #232323; 
+
+  }
+
+    .menu a:hover {
+        color: #FE7826;
+    }
+  
+  .sign-in-button {
+    padding: 0.5rem 2rem;
+    background-color: transparent; /* Replace with actual color from design */
+    border: none;
+    border-radius: 50px;
+    color: #000;
+    font-weight: semi-bold;
+    border: 1px solid #FE7826;
+    cursor: pointer;
+  }
+
+    .sign-in-button:hover {
+        background-color: #FE7826;
+        color: #fff;
+    }
+  

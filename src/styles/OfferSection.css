@@ -1,0 +1,56 @@
+.offer-section {
+    justify-content: space-around;
+    background-color: #fff; /* Replace with actual background color */
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .offers{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff; /* Replace with actual background color */
+    padding: 2rem;
+  }
+  
+  .offer-section .offer {
+    width: 30%;
+  }
+
+  .offers .offer .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #1D8B7C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+  }
+
+  .offers .offer .icon img{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .offer-section h3 {
+    color: #333; /* Replace with actual color from design */
+    font-weight: 600;
+    font-size: 36px;
+  }
+  
+  .offer-section p {
+    color: #666; /* Replace with actual color from design */
+  }
+  
+  .more{
+    display: flex;
+    align-items: center;
+  }
+
+  .more .left{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+  }

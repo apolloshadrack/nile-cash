@@ -1,0 +1,57 @@
+.download-section {
+    padding: 2rem;
+    display: flex;
+    background-color: #fff; /* Replace with actual color from design */
+    text-align: center;
+  }
+  
+  .download-section h2 {
+    margin-bottom: 1rem;
+    font-size: 36px;
+    text-align: left;
+    max-width: 500px;
+  }
+
+  .download-section .left{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .download-section .right{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .download-section p {
+    margin-bottom: 2rem;
+    font-size: 16px;
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .app-store-button,
+  .google-play-button {
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .app-store-button {
+    background-color: #000; /* Replace with actual color from design */
+    color: #fff;
+  }
+  
+  .google-play-button {
+    background-color: #666; /* Replace with actual color from design */
+    color: #fff;
+  }
+  
