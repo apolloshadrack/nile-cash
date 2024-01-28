@@ -1,8 +1,22 @@
 import React from 'react';
+import { doc, addDoc, collection } from "firebase/firestore"; 
+import { db } from '../firebase';
 import '../styles/HeroSection.css';
 import people from '../assets/people.png';
 
 const HeroSection = () => {
+
+  const addData = async() => {
+  const docRef = await addDoc(collection(db, "users"), {
+    name: "iceberg",
+    country: "Zambia"
+  });
+  console.log("Document written with ID: ", docRef.id);
+  }
+
+
+
+
   return (
     <section className="hero-section">
     <div className='hero-left'>
@@ -17,6 +31,8 @@ const HeroSection = () => {
         <div className="hero-right">
             <img src={people} alt='people'></img>
         </div>
+
+        <button onClick={() => {addData()}}>Add Data</button>
       
     </section>
   );

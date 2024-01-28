@@ -1,4 +1,6 @@
 import React from 'react';
+import { FirebaseAuthProvider } from '@react-firebase/auth';
+import { auth, app } from './firebase';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import OfferSection from './components/OfferSection';
