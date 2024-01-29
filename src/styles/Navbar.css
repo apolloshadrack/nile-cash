@@ -9,7 +9,13 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    display: flex;
+    align-items: center;
     /* Include logo styling here */
+  }
+
+  .logo img{
+    margin-right: 10px;
   }
   
   .menu a {
