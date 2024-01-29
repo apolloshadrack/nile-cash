@@ -7,7 +7,7 @@ import people from '../assets/people.png';
   const HeroSection = () => {
 
   return (
-    <section className="hero-section">
+    <section className="hero-section" id='home'>
     <div className='hero-left'>
     <h1>Get quick cash as an EIT!</h1>
       <p>Click request loan below to fill the request form. Our team will verify your request and dispense immediately. No collateral, no hidden charges.</p>

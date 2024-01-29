@@ -29,6 +29,21 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .download-section .right .btn{
+    display: flex;
+    justify-content: start;
+  } 
+
+
+  .download-section .right .btn .request-loan-button{
+    padding: 1rem 2rem;
+    background-color: #FE7826; /* Replace with actual color from design */
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+  }
   
   .download-section p {
     margin-bottom: 2rem;

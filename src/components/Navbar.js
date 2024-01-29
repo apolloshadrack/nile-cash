@@ -10,10 +10,10 @@ const Navbar = () => {
         <span className="logo-text">Nile Cash</span>
       </div>
       <div className="menu">
-        <a href="#why-us">Why Us</a>
-        <a href="#services">Services</a>
+        <a href="#home">Home</a>
+        <a href="#loans">Services</a>
         <a href="#process">Our Process</a>
-        <a href="#loans">Loans</a>
+        <a href="#testimonials">Testimonials</a>
       </div>
       <button className="sign-in-button">Request Loan</button>
     </nav>

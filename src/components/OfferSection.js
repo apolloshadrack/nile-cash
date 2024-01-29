@@ -7,7 +7,7 @@ import wavyman from '../assets/wavyman.png';
 
 const OfferSection = () => {
   return (
-    <section className="offer-section">
+    <section className="offer-section" id="loans">
       <div>
       <h2>What we offer</h2>
       <div className="offers">
@@ -39,6 +39,10 @@ const OfferSection = () => {
       <div className='left'> 
           <h2>Designed to fit your lifestyle as an Entrepreneur</h2>
           <p>You have the freedom to request for short term loans, ensuring a truly unique experience that makes you feel extraordinary</p>
+          <div>
+          <button className="request-loan-button">Request Loan</button>
+          </div>
+         
       </div>
 
       <div className='right'>

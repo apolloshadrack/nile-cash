@@ -67,3 +67,12 @@
     line-height: 1.5;
     max-width: 500px;
   }
+
+  .more .left .request-loan-button {
+    padding: 1rem 2rem;
+    background-color: #FE7826; 
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+  }
