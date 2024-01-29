@@ -1,0 +1,62 @@
+.history {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .history h2 {
+    text-align: left;
+    color: #333;
+  }
+  
+  .search-input {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  td:nth-last-child(1)::before {
+    content: attr(data-status);
+    display: block;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: green; /* Default background, you can add logic to change based on status */
+}
+  /* Adjust styling based on the actual status values */
+  td[data-status="Review"]::before {
+    background-color: orange;
+  }
+  
+  td[data-status="Confirmed"]::before {
+    background-color: green;
+  }
+  
