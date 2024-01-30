@@ -1,0 +1,69 @@
+.loan-form-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.loan-form-container .left-section {
+    width: 50%;
+}
+
+.loan-form-container .right-section {
+    width: 50%;
+    padding: 0 20px;
+    margin-top: auto;
+}
+
+.loan-form-container h2 {
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.loan-form-container form div {
+    margin-bottom: 10px;
+}
+
+.loan-form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.loan-form-container input[type="text"],
+.loan-form-container input[type="number"],
+.loan-form-container input[type="tel"],
+.loan-form-container input[type="email"],
+.loan-form-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(235, 229, 229);
+}
+
+.loan-form-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.loan-form-container button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #ff5918;
+    color: #fff;
+    border: none;
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.wording {
+    padding-top: 10%;
+    padding-right: 2%;
+    margin-right: 10%;
+    margin-left: -20%;
+    text-align: start;
+}
+.title {
+    font-weight: bold;
+    padding-top: 5%;
+    padding-right: 5%;
+    margin-left: 10%;
+    text-align: right;
+    align-items: flex-start;
+}
