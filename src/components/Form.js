@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import '../styles/Form.css';
 
 const Form = () => {
+
+    // State variables
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -9,6 +11,7 @@ const Form = () => {
     const [receivingNumber, setReceivingNumber] = useState("");
     const [termsChecked, setTermsChecked] = useState(false);
 
+    //handleSubmit function to handle the form submission
     const handleSubmit = (e) => {
         e.preventDefault();
 
