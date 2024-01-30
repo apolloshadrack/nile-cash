@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { doc, addDoc, collection } from "firebase/firestore"; 
+import { db } from '../firebase';
 import '../styles/Form.css';
 
-const Form = () => {
-
-    // State variables
+const LoanRequestForm = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phoneNumber, setPhoneNumber] = useState("");
@@ -11,8 +11,7 @@ const Form = () => {
     const [receivingNumber, setReceivingNumber] = useState("");
     const [termsChecked, setTermsChecked] = useState(false);
 
-    //handleSubmit function to handle the form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (termsChecked) {
@@ -23,11 +22,10 @@ const Form = () => {
                 amount,
                 receivingNumber,
             };
-
             console.log(formData);
-            // Usher: Please Perform any necessary actions with the form data
+            return await addDoc(collection(db, "loan_request"), formData);
         } else {
-            alert("Please accept the terms and conditions");
+            console.log("Please accept the terms and conditions");
         }
     };
 
@@ -111,4 +109,4 @@ const Form = () => {
     );
 };
 
-export default Form;
+export default LoanRequestForm;

@@ -1,5 +1,7 @@
 import React from 'react';
-import '../styles/History.css';
+import { auth, googleProvider } from '../firebase';
+import { signInWithPopup } from 'firebase/auth';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const History = () => {
   const data = [
@@ -7,11 +9,29 @@ const History = () => {
     { name: 'Andrew', date: '03/01/2024', amount: '100ghc', repaymentDate: '25/01/2024', expectedAmount: '110 ghc', status: 'Confirmed' },
     { name: 'Peris', date: '11/01/2024', amount: '100ghc', repaymentDate: '25/01/2024', expectedAmount: '110 ghc', status: 'Confirmed' },
     { name: 'Emmanuel', date: '10/01/2024', amount: '100ghc', repaymentDate: '25/01/2024', expectedAmount: '110 ghc', status: 'Confirmed' }
-    // ... more data
   ];
 
+  const [user] = useAuthState(auth);
+
+  const signInWithGoogle = async () => {
+    try {
+      await signInWithPopup(auth, googleProvider);
+    } catch (error) {
+      console.error("Error signing in with Google:", error);
+    }
+  };
+
+  const handleLogout = () => {
+    console.log('handle logout')
+  }
+
   return (
-    <div className="history">
+    <>
+    {user ? (
+      <>
+        <h1>Hello, {user?.displayName}</h1>
+          <button onClick={handleLogout}>Log out</button>
+        <div className="history">
       <h1>History</h1>
       <input type="text" className="search-input" placeholder="search" />
       
@@ -44,6 +64,16 @@ const History = () => {
         </tbody>
       </table>
     </div>
+      </>
+    ) : (
+      <>
+         <button onClick={signInWithGoogle}>Sign In with Google</button>
+      </>
+    )
+
+    
+    }
+    </>
   );
 };
 
