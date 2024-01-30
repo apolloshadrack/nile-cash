@@ -15,6 +15,7 @@ const App = () => {
           <Route path="/history" element={<History />} />
           <Route path="/loan_request" element={<Form />} />
           <Route path="/" element={<Homepage />} />
+          
         </Routes>
 
       </div>
