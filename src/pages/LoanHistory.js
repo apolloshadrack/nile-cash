@@ -67,7 +67,73 @@ const History = () => {
       </>
     ) : (
       <>
-         <button onClick={signInWithGoogle}>Sign In with Google</button>
+      <div className="history">
+      <h1>History</h1>
+      <input type="text" className="search-input" placeholder="search" />
+      
+      <table className="history-table">
+        <thead>
+          <tr>
+            <th>Names</th>
+            <th>Disbursed Loans</th>
+            <th>Amount</th>
+            <th>Repayment Date</th>
+            <th>Expected Amount(10%)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item, index) => (
+            <tr key={index}>
+              <td>{item.name}</td>
+              <td>{item.date}</td>
+              <td>{item.amount}</td>
+              <td>{item.repaymentDate}</td>
+              <td>{item.expectedAmount}</td>
+              <td>
+                <span className={`status ${item.status.toLowerCase()}`}>
+                  {item.status}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <div className="history">
+      <h1>History</h1>
+      <input type="text" className="search-input" placeholder="search" />
+      
+      <table className="history-table">
+        <thead>
+          <tr>
+            <th>Names</th>
+            <th>Disbursed Loans</th>
+            <th>Amount</th>
+            <th>Repayment Date</th>
+            <th>Expected Amount(10%)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item, index) => (
+            <tr key={index}>
+              <td>{item.name}</td>
+              <td>{item.date}</td>
+              <td>{item.amount}</td>
+              <td>{item.repaymentDate}</td>
+              <td>{item.expectedAmount}</td>
+              <td>
+                <span className={`status ${item.status.toLowerCase()}`}>
+                  {item.status}
+                </span>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+         {/* <button onClick={signInWithGoogle}>Sign In with Google</button> */}
       </>
     )
 
