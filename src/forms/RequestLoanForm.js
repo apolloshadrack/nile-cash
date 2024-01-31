@@ -22,6 +22,8 @@ const LoanRequestForm = () => {
                 amount,
                 receivingNumber,
             };
+
+            // const checkData = await getDoc('loan_request', id,)
              await addDoc(collection(db, "loan_request"), formData);
              alert("Success. Loan request success")
         } else {
