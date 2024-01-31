@@ -10,12 +10,13 @@ const Navbar = () => {
         <span className="logo-text">Nile Cash</span>
       </div>
       <div className="menu">
-        <a href="#home">Home</a>
-        <a href="#loans">Services</a>
-        <a href="#process">Our Process</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="/">Home</a>
+        <a href="/">Services</a>
+        <a href="/">Our Process</a>
+        <a href="/">Testimonials</a>
       </div>
-      <button className="sign-in-button">Request Loan</button>
+       
+      <button className="sign-in-button" ><a href="/loan-request">Request Loan</a></button>
     </nav>
   );
 };
