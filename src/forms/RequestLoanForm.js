@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { addDoc, getDoc, collection } from "firebase/firestore"; 
+import { addDoc, collection } from "firebase/firestore"; 
 import { db } from '../firebase';
 import '../styles/Form.css';
 
@@ -22,7 +22,6 @@ const LoanRequestForm = () => {
                 amount,
                 receivingNumber,
             };
-            const checkData = await getDoc('loan_request', id,)
              await addDoc(collection(db, "loan_request"), formData);
              alert("Success. Loan request success")
         } else {
