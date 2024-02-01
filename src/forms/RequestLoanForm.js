@@ -31,7 +31,7 @@ const LoanRequestForm = () => {
 
     return (
         <div className="loan-form-container">
-            <h1 className="title">Request Loan</h1>
+            <h1 className="title">Request</h1>
             <p className="wording">
                 Discover the power of our secure and rewarding credit<br />
                 system. Explore our range of loans and take control<br />
